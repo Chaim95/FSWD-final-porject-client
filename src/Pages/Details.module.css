@@ -1,0 +1,103 @@
+
+.container {
+  padding: 40px;
+  text-align: center;
+  background-color: #f0f2f5;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.header .title {
+  font-size: 48px;
+  font-weight: bold;
+  color: #2c3e50;
+  flex-grow: 1;
+  text-align: left;
+}
+
+.buyContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buyButton {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.buyButton:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.price {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.posterContainer {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
+}
+
+.poster {
+  width: 50%;
+  max-width: 600px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-right: 40px;
+}
+
+.details {
+  flex-grow: 1;
+  text-align: left;
+}
+
+.details p {
+  font-size: 20px;
+  color: #34495e;
+  margin: 10px 0;
+}
+
+.youtubeContainer {
+  margin-top: 40px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.youtubeContainer iframe {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

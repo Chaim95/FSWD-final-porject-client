@@ -1,0 +1,127 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f0f4f8 30%, #d9e2ec 100%);
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .noShows {
+    font-size: 20px;
+    color: #7f8c8d;
+  }
+  
+ 
+  .showsGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .showCard {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(145deg, #e3e7eb, #f9f9fb);
+  }
+  
+  .showCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  .poster {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .showDetails h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
+  .showDetails p {
+    font-size: 18px;
+    color: #7f8c8d;
+    margin: 5px 0;
+  }
+  
+  
+  .detailsButton {
+    background-color: #3c9ae7;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .detailsButton:hover {
+    background-color: #141ac6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  .pagination {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .pageButton {
+    background-color: #2980b9;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .pageButton:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
+  .pageButton:not(:disabled):hover {
+    background-color: #1f618d;
+  }
+  
+  .pageInfo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #34495e;
+  }
+  
