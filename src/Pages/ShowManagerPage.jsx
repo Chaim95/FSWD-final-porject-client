@@ -60,7 +60,8 @@ function ShowManagerPage() {
       place_id: '',
       prices: '',
       artist: '',
-      poster_url: ''
+      poster_url: '',
+      seats_count: ''
     });
     setOpenDialog(true);
   };
@@ -106,6 +107,8 @@ function ShowManagerPage() {
               <p>End Time: {show.hours_finish}</p>
               <p>Price: {show.prices}</p>
               <p>Artist: {show.artist}</p>
+              <p>Seats Count: {show.seats_count}</p>
+
             </div>
             <div className={styles.actions}>
               <button className={styles.editButton} onClick={() => handleEdit(show)}>Edit</button>
@@ -170,6 +173,14 @@ function ShowManagerPage() {
                 value={newShow.artist}
                 onChange={(e) => setNewShow({ ...newShow, artist: e.target.value })}
                 placeholder="Artist"
+                className={styles.input}
+                required
+              />
+               <input
+                type="number"
+                value={newShow.seats_count}
+                onChange={(e) => setNewShow({ ...newShow, seats_count: e.target.value })}
+                placeholder="Seats Count"
                 className={styles.input}
                 required
               />

@@ -19,7 +19,7 @@ function App() {
         <Route path="/register" element={<RegisterForm />} />
         <Route path="/login" element={<LoginForm />} />
         <Route path="/profile" element={<PrivateRoute roles={['regular']}><ProfilePage /></PrivateRoute>} />
-        <Route path="/admin-dashboard" element={<PrivateRoute roles={['admin']}><ShowManagerPage /></PrivateRoute>} />
+        <Route path="/admin-dashboard" element={<PrivateRoute roles={['show_admin', 'admin']}><ShowManagerPage /></PrivateRoute>} />
         <Route path="/details/:id" element={<ShowDetails />} /> 
       </Routes>
       <Footer />

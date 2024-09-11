@@ -51,6 +51,11 @@ const NavigationBar = () => {
                 <Link to="/admin-dashboard" style={styles.link}>Manage Shows</Link>
               </div>
             )}
+             {userType === 'show_admin' && (
+              <div style={styles.navItem}>
+                <Link to="/admin-dashboard" style={styles.link}>Manage Shows</Link>
+              </div>
+            )}
             <div style={styles.navItem}>
               <button onClick={handleLogout} style={styles.button}>Logout</button>
             </div>
