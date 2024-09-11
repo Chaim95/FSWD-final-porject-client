@@ -108,7 +108,8 @@ function ShowManagerPage() {
               <p>Price: {show.prices}</p>
               <p>Artist: {show.artist}</p>
               <p>Seats Count: {show.seats_count}</p>
-
+              <p>Sold Tickets: {show.seats_sold}</p>
+              <p>Avialable Tickets: {show.seats_count - show.seats_sold}</p>
             </div>
             <div className={styles.actions}>
               <button className={styles.editButton} onClick={() => handleEdit(show)}>Edit</button>
